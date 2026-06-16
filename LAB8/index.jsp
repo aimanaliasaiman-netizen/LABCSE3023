@@ -1,21 +1,31 @@
 <%-- 
     Document   : index
-    Created on : 2 Jun 2026, 4:03:47 pm
+    Created on : 2 Jun 2026, 3:06:08 pm
     Author     : aiman
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Car Shop Platform Engine</title>
+    <title>User Management Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-gg0yR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="container mt-5">
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Car Shop Management Core</h1>
-        <div class="d-flex justify-content-center gap-3">
-            <a class="btn btn-primary btn-lg mx-2" href="${pageContext.request.contextPath}/list" role="button">View Car Catalog</a>
-            <a class="btn btn-success btn-lg mx-2" href="${pageContext.request.contextPath}/new" role="button">Add New Vehicle</a>
-        </div>
-    </div>
+
+    <h1>Application MVC system for Employee Management</h1>
+    <br>
+    
+    <ul class="list-group col-md-4">
+        <li class="list-group-item">
+            <a href="${pageContext.request.contextPath}/list">All Employee List</a>
+        </li>
+        <li class="list-group-item">
+            <a href="${pageContext.request.contextPath}/new">Add a New Employee</a>
+        </li>
+        <li class="list-group-item">
+            <a href="${pageContext.request.contextPath}/list">Edit Employee</a>
+        </li>
+    </ul>
+
 </body>
 </html>
